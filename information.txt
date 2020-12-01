@@ -2,9 +2,43 @@ Garrett n Jose
 
 Buttons and Text Boxes
 
-uhhhh what are we supposed to put here
-Syntax:
+$$The Touchable Highlight (button) component:
 
-How to use it: 
+$$Syntax:
 
-Example:
+<TouchableHighlight 
+  onPress={() => { 
+    alert('<alert>') 
+  }}
+>
+This can also be one line if you prefer
+<TouchableHighlight onPress={()=>{alert('alert message')}}>
+
+$$How to use it: 
+
+1) place a component(s) into the touchable highlight component
+2) set the values for onPress
+3) click on the component(s) that is inside the touchable highlight component
+onPress defines what happens upon pressing whatever components are inside the touchable highlight component
+alert displays a message at the top of the page with whatever text is written there
+
+$$Example:
+
+<TouchableHighlight onPress={()=>{alert('PRESSING THIS TEXT TRIGGERS AN ALERT!')}}>
+  <Text style={styles.touchableText}>
+    PRESS THIS TEXT!
+  </Text>
+</TouchableHighlight>
+pressing the text that is labelled "PRESS THIS TEXT" triggers an alert that reads "PRESSING THIS TEXT TRIGGERS AN ALERT!"
+
+
+$$Text Boxes:
+
+$$Syntax:
+
+
+$$How to use it:
+
+
+$$Example:
+
